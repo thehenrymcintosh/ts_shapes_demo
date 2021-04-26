@@ -1,10 +1,5 @@
-// import * as shapes from "./shapes";
-
-// export function SumArea( shapes: shapes.Shape[]): Number {
-//   return shapes
-//     .reduce<Number>((sum, shape) => sum + shape.area(), 0);
-// }
-
-// export {
-//   shapes,
-// }
+// create some shapes
+// rotate them
+// scale them 
+// get the total area of all shapes
+// draw them out

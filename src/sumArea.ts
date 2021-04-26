@@ -1,6 +1,9 @@
 import {Shape} from "./shapes";
 
 export function SumArea( shapes: Shape[]): number {
-  return shapes
-    .reduce<number>((sum, shape) => sum + shape.area(), 0);
+  let area = 0;
+  for (const shape of shapes) {
+    area += shape.area();
+  }
+  return area;
 }
