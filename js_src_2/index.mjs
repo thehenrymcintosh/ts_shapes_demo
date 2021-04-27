@@ -1,6 +1,7 @@
 // create some shapes
-// rotate them
-// scale them 
+// rotate them 90 degrees
+// scale them by -0.5
+// rotate 45 degrees
 // get the total area of all shapes
 // draw them out
 
