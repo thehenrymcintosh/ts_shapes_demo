@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { Square } from "./index";
+import { Square } from "./Square.mjs";
 
 describe("Square", () => {
   it("can be created with a positive integer side length", () => {

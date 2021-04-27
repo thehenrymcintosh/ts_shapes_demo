@@ -6,7 +6,10 @@
   "scripts": {
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'src/**/*.spec.ts'",
     "test:watch": "nodemon -e ts --watch src --exec \"npm run test\"",
-    "start": "ts-node src/index.ts"
+    "js-example:1": "ts-node ./js_src/index.mjs",
+    "js-example:2": "ts-node ./js_src_2/index.mjs",
+    "start": "ts-node ./src/index.ts",
+    "examples": "npm run js-example:1 && npm run js-example:2 && npm run start"
   },
   "author": "",
   "license": "ISC",

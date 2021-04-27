@@ -6,7 +6,7 @@ export class Circle implements Shape {
     if (radius <= 0) throw new Error("Radius must be greater than 0")
     this.radius = radius;
   }
-  area() {
+  area(): number {
     return Math.PI * ( this.radius ** 2 );
   }
 }

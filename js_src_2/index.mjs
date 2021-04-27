@@ -4,10 +4,10 @@
 // get the total area of all shapes
 // draw them out
 
-import { Circle, Triangle, Square, Shape} from "./shapes";
-import { sumArea } from "./sumArea";
+import { Circle, Triangle, Square } from "./shapes/index.mjs";
+import { sumArea } from "./sumArea.mjs";
 
-const shapes : Shape[]  = [
+const shapes = [
   new Square(19),
   new Circle(5),
   new Triangle(7, 4),
@@ -15,10 +15,10 @@ const shapes : Shape[]  = [
 
 const total_area = sumArea(shapes);
 
-log(`TS`);
+log(`JS polymorphic`);
 log(`total area is ${total_area}`);
 
 function log(text) {
-  // green log colour
-  console.log('\x1b[32m%s\x1b[0m', text);
+  // yellow log colour
+  console.log('\x1b[33m%s\x1b[0m', text);
 }
