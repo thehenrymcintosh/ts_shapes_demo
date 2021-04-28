@@ -21,6 +21,7 @@ export class Triangle implements Shape {
   angle() {
     return this.rotation_degrees;
   }
+  
   area(): number {
     return 1/2 * this.width * this.height;
   }

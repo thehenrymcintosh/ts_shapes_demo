@@ -9,6 +9,7 @@
 import { Circle, Triangle, Square } from "./shapes/index.mjs";
 import { newFeature } from "./new_feature.mjs";
 import { sumArea } from "./sumArea.mjs";
+log(`JS procedural`);
 
 const shapes = [
   new Square(19),
@@ -16,12 +17,11 @@ const shapes = [
   new Triangle(7, 4),
 ];
 
+log(`initial total area is ${sumArea(shapes)}`);
+
 const transformed_shapes = newFeature(shapes);
 
-const total_area = sumArea(transformed_shapes);
-
-log(`JS procedural`);
-log(`total area is ${total_area}`)
+log(`transformed total area is ${sumArea(transformed_shapes)}`)
 for(const shape of transformed_shapes) {
   log(`${shape.type} angle: ${shape.angle}`)
 }

@@ -9,7 +9,4 @@ export class Triangle {
     this.width = width;
     this.height = height;
   }
-  area() {
-    return 1/2 * this.width * this.height;
-  }
 }

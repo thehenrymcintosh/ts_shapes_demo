@@ -9,6 +9,7 @@
 import { newFeature } from "./new_feature";
 import { Circle, Triangle, Square, Shape} from "./shapes";
 import { sumArea } from "./sumArea";
+log(`TS`);
 
 const shapes : Shape[]  = [
   new Square(19),
@@ -16,12 +17,10 @@ const shapes : Shape[]  = [
   new Triangle(7, 4),
 ];
 
+log(`initial total area is ${sumArea(shapes)}`);
 const transformed_shapes = newFeature(shapes);
 
-const total_area = sumArea(transformed_shapes);
-
-log(`TS`);
-log(`total area is ${total_area}`);
+log(`transformed total area is ${sumArea(transformed_shapes)}`);
 transformed_shapes.forEach(log);
 function log(text) {
   // green log colour

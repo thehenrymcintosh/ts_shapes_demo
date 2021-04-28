@@ -7,6 +7,7 @@
 
 import { Circle, Triangle, Square } from "./shapes/index.mjs";
 import { sumArea } from "./sumArea.mjs";
+log(`JS polymorphic`);
 
 const shapes = [
   new Square(19),
@@ -14,10 +15,8 @@ const shapes = [
   new Triangle(7, 4),
 ];
 
-const total_area = sumArea(shapes);
 
-log(`JS polymorphic`);
-log(`total area is ${total_area}`);
+log(`initial total area is ${sumArea(shapes)}`);
 
 function log(text) {
   // yellow log colour

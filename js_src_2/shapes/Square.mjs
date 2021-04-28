@@ -6,6 +6,6 @@ export class Square  {
   }
 
   area() {
-    return this.side_length ** 2;
+    this.side_length ** 2;
   }
 }
