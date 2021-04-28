@@ -23,8 +23,7 @@ export class Rectangle implements Shape  {
   }
 
   rotate(degrees): Shape {
-    const angle = this.rotation_degrees + degrees;
-    return new Rectangle(this.width, this.height, angle);
+    return new Rectangle(this.width, this.height, this.angle() + degrees);
   }
 
   scale(factor): Shape {

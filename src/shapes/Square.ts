@@ -20,8 +20,7 @@ export class Square implements Shape  {
   }
 
   rotate(degrees): Shape {
-    const angle = this.rotation_degrees + degrees;
-    return new Square(this.side_length, angle);
+    return new Square(this.side_length, this.angle() + degrees);
   }
 
   scale(factor): Shape {

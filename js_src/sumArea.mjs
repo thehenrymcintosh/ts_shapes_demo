@@ -1,5 +1,6 @@
 
 export function sumArea(shapes) {
+  if (!Array.isArray(shapes)) throw new Error("Shapes must be an array");
   let area = 0;
   for (const shape of shapes) {
     area += getArea(shape);

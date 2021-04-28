@@ -14,8 +14,7 @@ export class Triangle implements Shape {
   }
 
   rotate(degrees): Shape {
-    const angle = this.rotation_degrees + degrees;
-    return new Triangle(this.width, this.height, angle);
+    return new Triangle(this.width, this.height, this.angle() + degrees);
   }
 
   angle() {
